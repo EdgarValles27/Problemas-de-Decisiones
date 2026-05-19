@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Póliza de Seguro</title>
+
+    <link rel="stylesheet" href="../Styles/Styles.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <img src="../Images/Seguro.webp" class="imagen">
+        <h1>Seguro de Auto</h1>
+
+        <label>Tipo de póliza</label>
+        <select id="tipo">
+            <option value="A">Cobertura amplia (A)</option>
+            <option value="B">Daños a terceros (B)</option>
+        </select>
+
+        <label>¿Bebe alcohol?</label>
+        <select id="alcohol">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>¿Usa lentes?</label>
+        <select id="lentes">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>¿Tiene enfermedad?</label>
+        <select id="enfermedad">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <input type="number" id="edad"
+        placeholder="Ingresa tu edad">
+
+        <button onclick="CalcularPoliza()">
+            Calcular
+        </button>
+
+        <h2 id="resultado"></h2>
+
+    </div>
+     <script src="../Script/Seguro.Js"></script>
+
+</body>
+</html>
